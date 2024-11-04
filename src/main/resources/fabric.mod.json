@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "disenchant-command",
+	"version": "${version}",
+	"name": "Disenchant Command",
+	"description": "This mod adds the opposite of the enchant command",
+	"authors": [
+		"John Adept"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/disenchant-command/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.johnadept.disenchant.DisenchantCommandMod"
+		]
+	},
+	"mixins": [
+		"disenchant-command.mixins.json",
+		{
+			"config": "disenchant-command.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
