@@ -9,7 +9,7 @@
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": ""
+		"sources": "https://github.com/JohannesGoodbye/DisenchantCommand"
 	},
 	"license": "MIT",
 	"icon": "assets/disenchant-command/icon.png",
